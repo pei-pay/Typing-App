@@ -1,0 +1,63 @@
+body {
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+  
+}
+
+main {
+  padding-top: 40px;
+  text-align: center;
+}
+
+#target {
+  font-size: 48px;
+  letter-spacing: 3px;
+}
+
+.info {
+  color: #ccc;
+}
+
+.container {
+  width: 380px;
+  padding-top: 30px;
+  margin: auto ;
+}
+
+#app h1 {
+  font-size: 28px;
+  border-bottom: 1px solid #ddd;
+  letter-spacing: 3px;
+  padding-bottom: 16px;
+  margin-top: 5px;
+}
+
+#app li { 
+  line-height: 1.5;
+}
+
+#app input[type="text"] {
+  padding: 3px;
+}
+
+.command {
+  font-size: 18px;
+  cursor: pointer;
+  color: #08c;
+}
+
+#app ul {
+  list-style: decimal;
+}
+
+#app li > span.done {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.remains {
+  color: #bbb;
+  font-size: 16px;
+  font-weight: normal;
+}
+
