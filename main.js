@@ -6,7 +6,19 @@
     el: '#app',
     data: {
       newItem: '',
-      todos: [],
+      todos: [{
+        title: 'Add',
+        isDone: false
+      }, {
+        title: 'words',
+        isDone: false
+      }, {
+        title: 'you want to',
+        isDone: false
+      }, {
+        title: 'memorize',
+        isDone: flase
+      }],
     },
     watch: {
       todos: {
