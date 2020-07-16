@@ -17,7 +17,7 @@
         isDone: false
       }, {
         title: 'memorize',
-        isDone: flase
+        isDone: false
       }],
     },
     watch: {
