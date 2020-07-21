@@ -7,7 +7,7 @@
   </head>
   <body>
     <main>
-      <p id="target">double click to start</p>
+      <p id="target">Double click to start</p>
       <p class="info">
         Letter count: <span id="score">0</span>,
         Miss count: <span id="miss">0</span>
@@ -26,7 +26,7 @@
           <span :class= "{done: todo.isDone}">{{ todo.title }}</span>
           <span @click="deleteItem(index)" class="command">[x]</span>
         </li>
-        <p v-show="!todos.length">Add words here!</p>
+        <p v-show="!todos.length">Add more words!</p>
       </ul>
       <form @submit.prevent="addItem">
         <input type="text" v-model="newItem" placeholder="Type your words!">

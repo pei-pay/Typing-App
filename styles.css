@@ -1,7 +1,7 @@
 body {
   font-size: 20px;
   font-family: 'Courier New', monospace;
-  
+  user-select: none;
 }
 
 main {
@@ -20,12 +20,12 @@ main {
 
 .container {
   width: 380px;
-  padding-top: 30px;
+  padding-top: 50px;
   margin: auto ;
 }
 
 #app h1 {
-  font-size: 28px;
+  font-size: 30px;
   border-bottom: 1px solid #ddd;
   letter-spacing: 3px;
   padding-bottom: 16px;
@@ -34,6 +34,10 @@ main {
 
 #app li { 
   line-height: 1.5;
+}
+
+#app p { 
+  font-size: 25px;
 }
 
 #app input[type="text"] {

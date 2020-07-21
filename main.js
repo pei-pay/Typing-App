@@ -6,7 +6,7 @@
     el: '#app',
     data: {
       newItem: '',
-      todos: [],
+      todos: []
     },
     watch: {
       todos: {
@@ -17,7 +17,19 @@
       }
     },
     mounted: function() {
-      this.todos = JSON.parse(localStorage.getItem('todos')) || [];
+      this.todos = JSON.parse(localStorage.getItem('todos')) || [{
+        title: 'add',
+        isDone: false
+        }, {
+        title: 'words',
+        isDone: false
+        }, {
+        title: 'you like',
+        isDone: false
+        }, {
+        title: 'from below',
+        isDone: false
+        }]
     },
 
     methods: {
@@ -30,12 +42,12 @@
         this.newItem = '';
       },
       deleteItem: function(index) {
-        if (confirm('are you sure?')){
+        if (confirm('You sure?')){
           this.todos.splice(index, 1);
         }
       },
       purge: function() {
-        if (!confirm('delete finished?')){
+        if (!confirm('Delete finished?')){
           return;
         }
         this.todos = this.remaining;
@@ -97,7 +109,7 @@
         showResult();
       }, 100);
       
-      target.textContent = ' double click to replay';
+      target.textContent = ' Double click to replay';
     }
   }
   
