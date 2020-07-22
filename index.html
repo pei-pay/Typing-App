@@ -18,7 +18,7 @@
     <div id="app" class="container">
       <button @click="purge">Purge</button>
       <h1>
-        My Vocabularies<span class="remains">({{ remaining.length }}/{{ todos.length}})</span>
+        My Vocabulary bank<span class="remains">({{ remaining.length }}/{{ todos.length}})</span>
       </h1>
       <ul>
         <li v-for="(todo, index) in todos">
@@ -29,7 +29,7 @@
         <p v-show="!todos.length">Add more words!</p>
       </ul>
       <form @submit.prevent="addItem">
-        <input type="text" v-model="newItem" placeholder="Type your words!">
+        <input type="text" v-model="newItem" placeholder="Type your new words!">
         <input type="submit" value="Add">
       </form>
     </div>

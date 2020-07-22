@@ -18,16 +18,19 @@
     },
     mounted: function() {
       this.todos = JSON.parse(localStorage.getItem('todos')) || [{
-        title: 'add',
+        title: 'apple',
         isDone: false
         }, {
-        title: 'words',
+        title: 'banana',
         isDone: false
         }, {
-        title: 'you like',
+        title: 'blueberry',
         isDone: false
         }, {
-        title: 'from below',
+        title: 'pineapple',
+        isDone: true
+        }, {
+        title: 'orange',
         isDone: false
         }]
     },
